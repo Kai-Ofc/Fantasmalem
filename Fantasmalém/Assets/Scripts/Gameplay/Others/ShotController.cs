@@ -11,7 +11,7 @@ public class ShotController : MonoBehaviour
         transform.position += vel * Time.deltaTime;
     }
 
-    public void SetDirection(Vector3 direction) 
+    public void SetDirection(Vector3 direction)  
     {
         vel = direction.normalized * speed;
         transform.rotation = Quaternion.LookRotation(direction);
