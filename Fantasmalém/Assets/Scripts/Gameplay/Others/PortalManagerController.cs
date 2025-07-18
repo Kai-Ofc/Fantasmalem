@@ -6,6 +6,7 @@ public class PortalManagerController : MonoBehaviour
     public SpawnerController spawner;
     public GameObject portal;
     public GameObject enemyPreFab;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
