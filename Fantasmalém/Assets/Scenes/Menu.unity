@@ -1443,6 +1443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   configurationPanel: {fileID: 354885785}
+  bossLifeBar: {fileID: 0}
   audioConfiguration: {fileID: 354885790}
   isPaused: 0
 --- !u!114 &1454942904
