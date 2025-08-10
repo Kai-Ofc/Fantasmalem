@@ -1727,7 +1727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   follow: {fileID: 185532430}
-  smoothness: 10
+  smoothness: 20
   distance: {x: 0, y: 16, z: -18}
   playerController: {fileID: 185532431}
 --- !u!4 &267793235
@@ -12310,11 +12310,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6521171671928468046, guid: 0f71933f7454cad47b56e28edab09f06, type: 3}
   m_PrefabInstance: {fileID: 1922513067}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1922513069 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8930298105729148325, guid: 0f71933f7454cad47b56e28edab09f06, type: 3}
-  m_PrefabInstance: {fileID: 1922513067}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1922513070 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5804143842985624971, guid: 0f71933f7454cad47b56e28edab09f06, type: 3}
@@ -14505,7 +14500,7 @@ PrefabInstance:
     - target: {fileID: 7920280558207314281, guid: 1d1d2c1d891fd0448a0e04e3f01b50d0, type: 3}
       propertyPath: 'icons.Array.data[3]'
       value: 
-      objectReference: {fileID: 1922513069}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8028916486497878267, guid: 1d1d2c1d891fd0448a0e04e3f01b50d0, type: 3}
