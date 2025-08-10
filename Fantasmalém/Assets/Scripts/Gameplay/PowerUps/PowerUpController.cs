@@ -25,6 +25,9 @@ public class PowerUpController : MonoBehaviour
     bool speedBoost;
     float originalMoveSpeed;
 
+    //icons
+    public GameObject[] icons;
+
     void Start()
     {
         playerController = GetComponent<PlayerController>();
@@ -53,6 +56,7 @@ public class PowerUpController : MonoBehaviour
 
     public void StartShield() 
     {
+        icons[1].SetActive(true);
         shieldTimer = 0;
         protecion = true;      
         playerController.shields.SetActive(true); 
@@ -62,6 +66,7 @@ public class PowerUpController : MonoBehaviour
     {
         if (protecion == true && shieldTimer >= duration)
         {
+            icons[1].SetActive(false);
             playerController.shields.SetActive(false);
             protecion = false;
             
@@ -86,6 +91,7 @@ public class PowerUpController : MonoBehaviour
 
     public void SetSizeShot() 
     {
+        icons[0].SetActive(true);
         gunController.shot = bigShotPrefab;
         bigShot = true;
         projectilTimer = 0;
@@ -94,7 +100,8 @@ public class PowerUpController : MonoBehaviour
     void ResetShotSize()
     {
         if(bigShot == true && projectilTimer >= duration) 
-        { 
+        {
+            icons[0].SetActive(false);
             bigShot = false;
             gunController.shot = shotPrefab;
         }
@@ -104,6 +111,7 @@ public class PowerUpController : MonoBehaviour
     {
         if (speedBoost != true) 
         {
+            icons[2].SetActive(true);
             speedTimer = 0;
             speedBoost = true;
             playerController.moveSpeed *= 1.7f;
@@ -115,6 +123,7 @@ public class PowerUpController : MonoBehaviour
     {
         if (speedBoost == true && speedTimer >= duration)
         {
+            icons[2].SetActive(false);
             speedBoost = false;
             playerController.moveSpeed = originalMoveSpeed;
 
