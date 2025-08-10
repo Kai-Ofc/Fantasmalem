@@ -1727,7 +1727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   follow: {fileID: 185532430}
-  smoothness: 5
+  smoothness: 10
   distance: {x: 0, y: 16, z: -18}
   playerController: {fileID: 185532431}
 --- !u!4 &267793235
