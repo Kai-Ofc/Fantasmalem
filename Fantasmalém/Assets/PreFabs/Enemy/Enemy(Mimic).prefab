@@ -257,9 +257,17 @@ PrefabInstance:
       value: mimic
       objectReference: {fileID: 0}
     - target: {fileID: 3384750239652118108, guid: 29494ad58bd56774592ec34baa517343, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384750239652118108, guid: 29494ad58bd56774592ec34baa517343, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: f6ce2f4d946ce54459271f769532f6c8, type: 2}
+    - target: {fileID: 3384750239652118108, guid: 29494ad58bd56774592ec34baa517343, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0d348855ce7dbae4ebfb6d3f456e186b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

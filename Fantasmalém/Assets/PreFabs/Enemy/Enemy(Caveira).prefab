@@ -295,9 +295,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 5e2256614e42a3a45a18f6dff152d0ea, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5e2256614e42a3a45a18f6dff152d0ea, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 8d46f643e871482428dac44a2a4ebdbe, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 5e2256614e42a3a45a18f6dff152d0ea, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0d348855ce7dbae4ebfb6d3f456e186b, type: 2}
     - target: {fileID: 919132149155446097, guid: 5e2256614e42a3a45a18f6dff152d0ea, type: 3}
       propertyPath: m_Name
       value: CaveiraInimigo

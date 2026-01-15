@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed, maxSpeed, drag;
     private bool foward, backward, left, right;
 
+    public GameObject wParticle;
+
     public float minX = -10f;
     public float minZ = -10f;
 
@@ -22,6 +24,7 @@ public class PlayerController : MonoBehaviour
 
     public LifeController lifeController; // Vida
     public int playerDamage;
+    public GameObject hitParticle;
 
     public EnemyController enemy; // Inimigo
 
@@ -37,6 +40,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
 
+        wParticle.SetActive(false);
         superTimer = 10f;
         shields.SetActive(false);
         interfaceController = FindAnyObjectByType<InterfaceController>();
@@ -49,6 +53,16 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Movement();
+
+        if (foward == true || backward == true || left == true || right == true)
+        {
+            wParticle.SetActive(true);
+        }
+        else 
+        { 
+            wParticle.SetActive(false);
+        }
+
         LimitVelocity();
         HandleDrag();
 
@@ -180,5 +194,11 @@ public class PlayerController : MonoBehaviour
                 transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, 10f * Time.deltaTime);
             }
         }
+    }
+
+    public void HitInstance()
+    {
+        GameObject hit = Instantiate(hitParticle, this.transform.position, Quaternion.identity);
+        Destroy(hit, 1f);
     }
 }

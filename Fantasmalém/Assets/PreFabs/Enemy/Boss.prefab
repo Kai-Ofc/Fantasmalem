@@ -297,6 +297,7 @@ MonoBehaviour:
   spawner: {fileID: 0}
   gun: {fileID: 8340974651343555765}
   time: 7
+  bossLifeBar: {fileID: 0}
   hitParticle: {fileID: 3882610016815853629, guid: c9bb3121f795a0c469be77b56db7bea2, type: 3}
   life: 70
   damage: 2
@@ -641,7 +642,19 @@ PrefabInstance:
       value: boss
       objectReference: {fileID: 0}
     - target: {fileID: 5432496811229159251, guid: 091a68a8a816ed04d80cf5b47242b8ff, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5432496811229159251, guid: 091a68a8a816ed04d80cf5b47242b8ff, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -4201144670625409341, guid: 091a68a8a816ed04d80cf5b47242b8ff, type: 3}
+    - target: {fileID: 5432496811229159251, guid: 091a68a8a816ed04d80cf5b47242b8ff, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0d348855ce7dbae4ebfb6d3f456e186b, type: 2}
+    - target: {fileID: 5432496811229159251, guid: 091a68a8a816ed04d80cf5b47242b8ff, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: 2100000, guid: 8d46f643e871482428dac44a2a4ebdbe, type: 2}
     m_RemovedComponents: []
